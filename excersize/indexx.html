@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card style</title>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color:rgb(230, 242, 242);
+            align-items: center;
+        }
+        .Card{
+            width:276px;
+            height: 463px;
+            margin: 20px;
+            padding: 10px;
+            border: 1.5px solid rgb(209, 205, 205);
+            border-radius: 15px;
+            background-color: rgb(253, 253, 255);
+            box-shadow: 10px;
+        }
+        #image{
+            height: 183px;
+            width: 276px;
+            /* margin: 10px; */
+            box-sizing: border-box;
+            border: 0px solid black;
+            border-radius: 15px;
+            background-image: url("Card\ image.jpg");
+        }
+        .content{
+            height: 270px;
+            width: 276px;
+            /* border: 2px solid black; */
+        }
+        .tags ul{
+            display: flex;
+            list-style: none;
+            padding-left: 13px;
+
+            
+            
+            
+            /* padding: 3px;
+            margin: 14px;
+            margin-top: 14px;
+            text-align: center; */
+            
+            /* letter-spacing: 1px;
+            font-size: 16px; */
+            
+        }
+        .tags ul li{
+            border: 1px solid black;
+            border-radius: 20px;
+            color: rgb(88, 88, 88);
+            /* width: 50px; */
+            text-align: center;
+            padding-top: 0px;
+            padding-bottom: 3px;
+            padding-left: 9px;
+            padding-right: 9px;
+
+            margin: 5px;
+            margin-top: 15px;
+            
+        }
+        h1{
+            /* padding: 12px; */
+            /* text-align: left; */
+            margin: 12px;
+        }
+        p{
+            padding: px;
+            /* margin-bottom: 20px; */
+            margin: 12px;
+            height: 90px;
+            /* border: 1px solid black; */
+            overflow: hidden;
+            /* text-overflow: ellipsis; */
+            color: rgb(88, 88, 88);
+        }
+        footer{
+            border: 1px solid black;
+            border-radius: 35px;
+            font-weight: bold;
+            /* width: 130px;
+            height: 60px; */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: 25px;
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-bottom: 25px;
+            text-align: center;
+            /* margin-left: 60px; */
+            background-color: rgb(190, 230, 255);
+            color: rgb(0, 170, 255);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="Card">
+        <header id="image"></header>
+        <main class="content">
+            <nav class="tags">
+                <ul>
+                    <li>Nature</li>
+                    <li>Lake</li>
+                    <li>Lasfdsa</li>
+
+                </ul>
+            </nav>
+            <article>
+                <h1>Lora Li horm</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque a assumenda adipisci doloribus at minus velit temporibus doloremque optio placeat. Nisi, exercitationem.</p>
+            </article>
+                <footer>
+                    <div>Read More</div>
+                </footer>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .box{
+        margin: 10px;
+        padding: 5px;
+        width: 50vw;
+        height: 5px;
+        border: 2px solid black;
+        /* fill: color-mix(in hsl, hsl(210 87.4% 50%), blue 33%, orange 33%); */
+        color: blue;
+
+
+
+       }
+       .box1{
+        background-color: blue;
+        position: absolute;
+        top:0px;
+       }
+       .box2{
+        background-color: rgb(100, 100, 244);
+        /* position: relative; */
+       }
+       .box3{
+        background-color: lightblue;
+        /* position: relative; */
+       }
+       .box4{
+        background-color: aqua;
+       }
+       .parent{
+        padding: 20px;
+        margin: 30px;
+        border: 2px solid mediumaquamarine;
+       }
+       .grandparent{
+        padding: 20px;
+        margin: 30px;
+        border: 2px solid mediumslateblue;
+        position: fixed;
+       }
+    </style>
+</head>
+<body>
+    <div class="grandparent">
+        <div class="parent">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+        </div>
+    </div>
+</body>
+</html>

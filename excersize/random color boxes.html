@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            /* gap: 5px; */
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box box1">BOX</div>
+        <div class="box box2">BOX</div>
+        <div class="box box3">BOX</div>
+        <div class="box box4">BOX</div>    
+    </div>
+
+    <script>
+        // Approch 2
+
+        function getRandomColors(){
+            let r = 0 + Math.random()*(255-0);
+            let g = 0 + Math.random()*(255-0);
+            let b = 0 + Math.random()*(255-0);
+            return `rgb(${r}, ${g}, ${b})`; 
+            // use ` from laptop before 1 in the 2nd line 
+        }
+        let boxes = document.querySelector(".con").children;
+        console.log(boxes)
+        Array.from(boxes).forEach(e => {
+            e.style.backgroundColor = getRandomColors();
+            e.style.color = getRandomColors();
+        });
+    </script>
+
+
+
+    <!-- <script>
+        // let ran1 = Math.random();
+        // let ran2 = Math.random();
+        // let ran3 = Math.random();
+        // let ran4 = Math.random();
+
+        // let z = math.random(1,4);
+        // document.querySelector(".box1").innerTEXT =  z;
+
+        let a = ["red", "blue", "green", "pink"];
+        let i1 = Math.floor(Math.random() * a.length);
+        document.querySelector(".box1").style.backgroundColor = a[i1];
+        let i2 = Math.floor(Math.random() * a.length);
+        document.querySelector(".box2").style.backgroundColor = a[i2];
+        let i3 = Math.floor(Math.random() * a.length);
+        document.querySelector(".box3").style.backgroundColor = a[i3];
+        let i4 = Math.floor(Math.random() * a.length);
+        document.querySelector(".box4").style.backgroundColor = a[i4];
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    padding: 10px;
+}
+
+.playlists{
+    width: 1229px;
+    height: 100vh;
+    background-color: black;
+    border: 2px solid black;
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 15px;
+    overflow-y: auto;
+    /* overflow-x: auto; */
+    box-sizing: border-box;
+}
+
+
+.card{
+    /* margin-bottom: 13px; */
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 1200px;
+    height: 120px;
+    border: 2px solid white;
+    z-index: 2;
+    box-sizing: border-box;
+    color: whitesmoke;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    width: 850px;
+    height: 40px;
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+.imgs{
+    height: 100px;
+    width: 180px;
+    background-color: azure;
+    border: 0px;
+    border-radius: 5px;
+    /* background-image: url("thumb_!.webp"); */
+    background-size: contain;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 800px;
+
+}

@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.con{
+    border: 2px solid black;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: [one]500px [two]500px [three]500px;
+    grid-template-rows: [a]500px [b]500px [c]500px [d]500px [e]500px [f]500px;
+    gap: 100px;
+    justify-content: space-around;
+}
+
+.con div{
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.prop{
+    background-color: rgba(150, 198, 247, 0.565);
+    z-index: 1;
+}
+
+.items{
+    background-color: rgba(128, 128, 128, 0.606);
+}
+
+
+.scaleX{
+    grid-row: a;
+    grid-column: one;
+    
+}
+.scaleX:hover{
+    transform: scaleX(150%);
+    /* background-color: red; */
+}
+
+.scaleY{
+    grid-row: a;
+    grid-column: two;
+}
+
+.scaleY:hover{
+    transform: scaleY(150%);
+}
+.scale{
+    grid-row: a;
+    grid-column: three;
+}
+
+.scale:hover{
+    transform: scale(150%);
+}
+
+.translateX{
+    grid-row: b;
+    grid-column: one;
+}
+
+.translateX:hover{
+    transform: translateX(250px);
+}
+.translateY{
+    grid-row: b;
+    grid-column: two;
+}
+
+.translateY:hover{
+    transform: translateY(250px);
+}
+.translate{
+    grid-row: b;
+    grid-column: three;
+}
+
+.translate:hover{
+    transform: translate(250px,200px);
+}
+.matrix{
+    grid-row: c;
+    grid-column: one;
+}
+
+.matrix:hover{
+    transform: matrix(1 ,0 ,1 ,1 ,200 ,300);
+}
+.rotate{
+    grid-row: c;
+    grid-column: two;
+}
+
+.rotate:hover{
+    transform: rotate(36deg);
+}
+.skew{
+    grid-row: c;
+    grid-column: three;
+}
+
+.skew:hover{
+    transform: skew(15deg, 15deg);
+}
+.skewX{
+    grid-row: d;
+    grid-column: one;
+}
+
+.skewX:hover{
+    transform: skewX(15deg);
+}
+.skewY{
+    grid-row: d;
+    grid-column: two;
+}
+
+.skewY:hover{
+    transform: skewY(15deg);
+}
+.matrix3d{
+    grid-row: d;
+    grid-column: three;
+}
+
+.matrix3d:hover{
+    transform: matrix3d(1,0,0,0, 0,1,0,1, 1,1,1,0, 100,200,0,1);
+}
+.translateZ{
+    grid-row: e;
+    grid-column: one;
+}
+
+.translateZ:hover{
+    transform: translateZ(250px);
+}
+.rotateY{
+    grid-row: e;
+    grid-column: two;
+}
+
+.rotateY:hover{
+    transform: rotateY(70deg);
+}
+.rotateX{
+    grid-row: e;
+    grid-column: three;
+}
+
+.rotateX:hover{
+    transform: rotateX(70deg);
+}
+.translate3d{
+    grid-row: f;
+    grid-column: one;
+}
+
+.translate3d:hover{
+    transform: translate3d(200px,300px,500px);
+}
+

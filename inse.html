@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .container{
+            background-color: bisque;
+            width: 1000px;
+            height: 1000px;
+        }
+
+        .box{
+            background-color: aquamarine;
+            width: 100px;
+            height: 250px;
+            transition-property: all;
+            transition-duration: 3s;
+            /* transition-timing-function: ease-in-out; */
+            transition-timing-function: cubic-bezier(0.91,-0.46, 0.25, 0.93);
+            transition-delay: 1s;
+        }
+
+
+        .transition{
+            transform: translateX(40vw) translateY(40vh) scale(2);
+            background-color: aqua;
+        }
+    </style>
+<body>
+
+
+    <div class="container">
+        <div class="box transition">
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

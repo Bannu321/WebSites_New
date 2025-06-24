@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            /* --color: lightblue;
+            --secolor: blue; */
+            --color: gray;
+            --secolor: black;
+        }
+
+        .nav ul{
+            display: flex;
+            background-color: var(--color, lightblue);
+        }
+        .nav li{
+            list-style: none;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid var(--secolor,blue);
+            color: white;
+            background-color: var(--secolor,blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+</html>

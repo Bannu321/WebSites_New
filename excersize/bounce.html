@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .con{
+            width: 1050px;
+            height: 80vh;
+            background-color: green;
+            position: relative;
+            margin: auto;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            border-radius: 40px;
+            animation: UX 3s linear infinite,UY 0.5s ease-out infinite alternate-reverse;
+        }
+
+
+
+        /* @keyframes uX {
+            0%{
+                transition: transform;
+                
+            }
+            100%{
+                transition: transform;
+                
+            }
+            
+        } */
+
+
+        @keyframes UX{
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+
+        @keyframes UY{
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 30%;
+            }
+        }
+
+        @keyframes uY {
+            0%{
+                /* transition: transform; */
+                transform: translate(0px,0px);
+            }
+            12.5%{
+                transform: translate(125px,-100px);
+            }
+            25%{
+                /* transition: transform; */
+                transform: translate(250px,0px);
+            }
+            37.5%{
+                transform: translate(375px,-100px);
+            }
+            50%{
+                transition: transform;
+                transform: translate(500px,0px);
+            }
+            62.5%{
+                transform: translate(625px,-100px);
+            }
+            75%{
+                /* transition: transform; */
+                transform: translate(750px,0px);
+            }
+            87.5%{
+                transform: translate(875px,-100px);
+            }
+            100%{
+                transform: translate(1000px,0px);
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

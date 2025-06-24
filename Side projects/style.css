@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.container .slider{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: Roller 10s linear infinite;
+    /* transform: rotateX(45deg); */
+}
+
+
+.container .slider .item{
+    position: absolute;
+    inset: 0 0 0 0; /* Gives the same size aas the parent slider*/
+    transform:
+    rotateY(calc( (var(--p) - 1) * (360 / var(--q)) * 1deg))
+    translateZ(380px);
+    
+    /* rotateY(calc(var(--p) * 30deg)); */
+}
+
+.container .slider .item img{
+    width: 75%;
+    height: 80%;
+    object-fit: cover;
+    /* transform: translateZ(550px); */
+    
+}
+
+@keyframes Roller {
+    from{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    }
+    To{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+        
+    }
+}

@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Martel Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+
+body{
+    background-color: black;
+}
+
+
+.main{
+    height: 102vh;
+    width: 100%;
+    background-image: url("Assets/Images/background.jpg");
+    /* background-size: 100vw; */
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    background-position: top center;
+    /* background-position: -4px -25px; */
+    /* background-size: contain; */
+    position: relative;
+    /* top: 0px; */
+
+}
+
+.main .box{
+    height: 102vh;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.main nav{
+    height: 50px;
+    width: 80vw;
+    margin: auto;
+    padding: 23px 0px 0px 0px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+    margin: 2px;
+}
+
+
+.context{
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'martel sans';
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 12;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* padding: 30px; */
+    /* margin: 20px; */
+}
+
+
+.context > :first-child{
+    font-size: 56px;
+    font-weight: 900;
+    /* height: 50px; */
+    text-align: center;
+    /* width: 700px; */
+}
+.context >:nth-child(2){
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.context :nth-child(3){
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+.sepaArc{
+    width: 99vw;
+    height: 100px;
+    /* background-color: beige; */
+    overflow: hidden;
+}
+.sepaArc svg{
+    height: 80px;
+    width: 100vw;
+    /* object-fit: contain; */
+    /* object-position: 100px -200px; */
+    position: relative;
+    z-index: 12;
+    fill:black;
+    stroke: red;
+    stroke-width: 2px;
+}
+
+.btn{
+    padding: 4px 18px;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: 700;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border: 1px rgba(230, 230, 230, 0.7);
+}
+
+.red-btn{
+    padding: 4px 18px;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: 700;
+    background-color: rgb(229, 9, 20);
+    color: white;
+}
+
+.con2{
+    display: flex;
+    align-items: center;
+}
+.red-btn.get_s{
+    padding: 10px 35px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: rgb(229, 9, 20);
+    color: white;
+}
+
+.Email{
+    padding: 16px 16px 16px 16px;
+    height: 24px;
+    width: 335px;
+    min-height: 16px;
+    min-width: 16px;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-right: 4px;
+    align-self: center;
+    background-color: transparent;
+    border: 1px white
+    
+    
+}
+
+
+.trnds{
+    /* background-color: antiquewhite; */
+    color: white;
+    padding: 20px;
+    height: 25px;
+    width: 175px;
+    position: relative;
+    left:100px;
+    bottom: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.scrCon{
+    width: 85vw;
+    height: 50vh;
+    margin: auto;
+    /* background-color:blueviolet; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.listt{
+    padding: auto;
+    width: 80vw;
+    height: 50vh;
+    /* margin: auto; */
+    /* background-color: aquamarine; */
+    overflow:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 40px;
+    scroll-snap-type: x mandatory;
+}
+
+.scrCon img{
+    border-radius: 10px;
+    /* margin-top: 40px; */
+}
+
+.scrCon .Left{
+    height: 130px;
+    width: 30px;
+    background-color: white;
+    border-radius: 13px;
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px 0px;
+    opacity: 0%;
+}
+.scrCon .Right{
+    height: 130px;
+    width: 30px;
+    background-color: white;
+    border-radius: 13px;
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px 0px;
+    opacity: 0%;
+}
+
+.scrCon a{
+    color: white;
+    text-emphasis-color: white;
+    text-shadow: 2px;
+}
+
+.scrCon a div{
+    opacity: 100%;
+    color: black;
+    padding: 40px 5px;
+}
+
+.scrCon a:hover{
+    opacity: 30%;
+}
+
+.listt::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari, Opera */
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.listt > div {
+  scroll-snap-align: start;
+}
