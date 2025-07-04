@@ -15,7 +15,7 @@
 .cube {
   position: relative;
   top: 200px;
-  left: 200px;
+  left: 500px;
   width: 200px;
   height: 200px;
   transform-style: preserve-3d;
@@ -102,5 +102,5 @@
     border: 2px solid black;
     position: absolute;
     top: 73%;
-    left: 20%;
+    left: 40%;
 }
