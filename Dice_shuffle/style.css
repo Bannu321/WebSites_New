@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.cube {
+  position: relative;
+  top: 200px;
+  left: 200px;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(30deg);
+  /* animation: Roller 2s linear; */
+}
+
+.Roll{
+    animation: Roller 2s ease-out;
+}
+
+
+.face img{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+}
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  /* box-shadow: 0px 0px 0px 0px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Two   { transform: rotateY(  0deg) translateZ(100px); }
+.Four    { transform: rotateY(180deg) translateZ(100px); }
+.Three   { transform: rotateY( 90deg) translateZ(100px); }
+.Five    { transform: rotateY(-90deg) translateZ(100px); }
+.One    { transform: rotateX( 90deg) translateZ(100px); }
+.Six  { transform: rotateX(-90deg) translateZ(100px); }
+
+@keyframes Roller {
+    0%{
+        transform: perspective(1000px) rotateX(-360deg) rotateY(-360deg);
+    }
+    20%{
+        transform: perspective(1000px) rotateX(36deg) rotateY(60deg);
+        
+    }
+    40%{
+        transform: perspective(1000px) rotateX(-53deg) rotateY(-89deg);
+        
+    }
+    60%{
+        transform: perspective(1000px) rotateX(360deg) rotateY(360deg);
+        
+    }
+    80%{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(60deg);
+        
+    }
+    100%{
+        transform: perspective(1000px) rotateX(366deg) rotateY(360deg);
+        
+    }
+}
+
+
+.start{
+    height: 30px;
+    width: 80px;
+    background-color: black;
+    position: absolute;
+    top: 65%;
+    right: 30%;
+    color: white;
+    z-index: 10;
+}
+
+
+
+.result{
+    height: 100px;
+    width: 400px;
+    border: 2px solid black;
+    position: absolute;
+    top: 73%;
+    left: 20%;
+}
