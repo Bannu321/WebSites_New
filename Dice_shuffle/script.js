@@ -41,7 +41,7 @@ startBtn.addEventListener("click", () => {
         // // else img.style.display = "block";
         
         // Show result
-        resultDiv.textContent = `Front face is: ${number}`;
+        resultDiv.textContent = `You have Rolled: ${number}`;
     }, 2000);
 });
 
