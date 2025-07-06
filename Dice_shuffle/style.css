@@ -103,4 +103,5 @@
     border: 2px solid black;
     position: absolute;
     top: 70%;
+    background-color: rgba(128, 128, 128, 0.356);
 }
