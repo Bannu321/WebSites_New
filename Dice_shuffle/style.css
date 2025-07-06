@@ -107,5 +107,6 @@ body{
     border: 2px solid black;
     position: absolute;
     top: 70%;
+    font-size: 40px;
     background-color: rgba(128, 128, 128, 0.356);
 }
