@@ -1,4 +1,6 @@
-# Exclude files and folders from the Jekyll build
+# _config.yml
+
+# Exclude files and folders from the build process
 exclude:
   - node_modules/
   - Gemfile
