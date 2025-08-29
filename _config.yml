@@ -2,6 +2,8 @@
 
 # Exclude files and folders from the build process
 exclude:
+
+  - node_modules
   - node_modules/
   - Gemfile
   - Gemfile.lock
