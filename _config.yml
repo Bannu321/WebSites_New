@@ -1,0 +1,8 @@
+# Exclude files and folders from the Jekyll build
+exclude:
+  - node_modules/
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - README.md
